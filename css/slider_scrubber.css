@@ -131,16 +131,16 @@
 }
 
 
-/*all inline styles are moved here below*/
+/*all inline styles from slider_scrubber_demo.html are moved here below*/
 
-div#slider1_container {
+div.slider1_container_div {
     position: relative;
     top: 0px;
     left: 0px;
     width: 800px;
     height: 356px;
     background: #191919;
-    overflow: hidden;"
+    overflow: hidden;
 }
 
 div#slider1_container_loading {
