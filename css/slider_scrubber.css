@@ -130,7 +130,6 @@
     left: 0px;
 }
 
-
 /*all inline styles from slider_scrubber_demo.html are moved here below*/
 
 div.slider1_container_div {
@@ -182,22 +181,37 @@ div#topSliderTest {
     overflow: hidden;
 }
 
-span.jssora05l {
-    top: 158px;
-    left: 8px;
-}
-
-span.jssora05r {
-    top: 158px;
-    right: 8px;
-}
 
 div#thumbnavigator {
     left: 0px;
     bottom: 0px;
 }
 
+/*change the curosr from default to hand, using both pointer and hand for cross browser compatibility.*/
 div#thumbnavigator-slides {
+    cursor: pointer;
+    cursor: hand;
+}
+
+img {
     cursor: default;
 }
 
+/*show left and right navigation arrows only on mobile;*/
+@media only screen and (max-width: 768px) {
+    span.jssora05l {
+        top: 158px;
+        left: 8px;
+    }
+
+    span.jssora05r {
+        top: 158px;
+        right: 8px;
+    }
+}
+/*do not show left and right navigation arrow if it is not mobile*/
+@media only screen and (min-width: 769px) {
+    span.jssora05l, span.jssora05r {
+        display: none;
+    }
+}
