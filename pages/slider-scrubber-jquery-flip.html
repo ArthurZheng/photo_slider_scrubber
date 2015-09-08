@@ -104,8 +104,6 @@
         <div class="front">
             <!--<img src="../img/house1.jpeg" width="300" height="200" alt="Picture of House 1"/>-->
 
-
-
             <!--jssor scrubber slider code begins-->
             <div class="slider1_container_div" id="slider1_container">
 
@@ -213,7 +211,7 @@
                 <!-- ngIf: result.properties.url_domain == '' && result.properties.url_rea != '' -->
             </div>
 
-            <div class="grid-property-meta" style="background-color: ghostwhite">
+            <div class="grid-property-meta" style="background-color: ghostwhite; display: inline">
 
                 <div class="property-bedrooms grid-property-meta-item first" title="6 Bedroom">
                     <i class="icon"></i>
@@ -234,42 +232,8 @@
                     <i class="icon"></i>
                     <!--ngIf: result.properties.car_spaces <span ng-if="result.properties.car_spaces" class="ng-binding ng-scope">3</span> end ngIf: result.properties.car_spaces -->
                     <!-- ngIf: !result.properties.car_spaces -->
-                    <span class="icon-apartment">&nbsp;3</span>
-                </div>
-
-                <div class="property-car-spaces grid-property-meta-item" title="3 Car Spaces">
-                    <i class="icon"></i>
-                    <!--ngIf: result.properties.car_spaces <span ng-if="result.properties.car_spaces" class="ng-binding ng-scope">3</span> end ngIf: result.properties.car_spaces -->
-                    <!-- ngIf: !result.properties.car_spaces -->
                     <span class="icon-car">&nbsp;3</span>
                 </div>
-
-                <div class="property-car-spaces grid-property-meta-item" title="3 Car Spaces">
-                    <i class="icon"></i>
-                    <!--ngIf: result.properties.car_spaces <span ng-if="result.properties.car_spaces" class="ng-binding ng-scope">3</span> end ngIf: result.properties.car_spaces -->
-                    <!-- ngIf: !result.properties.car_spaces -->
-                    <span class="icon-house">&nbsp;3</span>
-                </div>
-                <div class="property-car-spaces grid-property-meta-item" title="3 Car Spaces">
-                    <i class="icon"></i>
-                    <!--ngIf: result.properties.car_spaces <span ng-if="result.properties.car_spaces" class="ng-binding ng-scope">3</span> end ngIf: result.properties.car_spaces -->
-                    <!-- ngIf: !result.properties.car_spaces -->
-                    <span class="icon-land">&nbsp;3</span>
-                </div>
-                <div class="property-car-spaces grid-property-meta-item" title="3 Car Spaces">
-                    <i class="icon"></i>
-                    <!--ngIf: result.properties.car_spaces <span ng-if="result.properties.car_spaces" class="ng-binding ng-scope">3</span> end ngIf: result.properties.car_spaces -->
-                    <!-- ngIf: !result.properties.car_spaces -->
-                    <span class="icon-search">&nbsp;3</span>
-                </div>
-                <div class="property-car-spaces grid-property-meta-item" title="3 Car Spaces">
-                    <i class="icon"></i>
-                    <!--ngIf: result.properties.car_spaces <span ng-if="result.properties.car_spaces" class="ng-binding ng-scope">3</span> end ngIf: result.properties.car_spaces -->
-                    <!-- ngIf: !result.properties.car_spaces -->
-                    <span class="icon-townhouse">&nbsp;3</span>
-                </div>
-
-
             </div>
 
             <div class="clearfix"></div>
@@ -395,11 +359,23 @@
         $(window).bind("orientationchange", ScaleSlider);
         //responsive code end.
 
+//        scales the slider to 300 * 200px by Jun;
+//        jssor_slider1.$ScaleWidth(300);
+        jssor_slider1.$ScaleHeight(200);
+
         // call the scrubber function from jquery.slider.scrubber.js, passing in a map with the slider object;
         $("#topSliderTest").scrubber({ slider: jssor_slider1 });
 
     });
 </script>
+
+    <!--Jssor Slider API:-->
+    <!--$ScaleWidth(width)-->
+    <!--//Scale the slider to new width and keep aspect ratio-->
+    <!--$ScaleHeight()-->
+    <!--//Retrieve scaled height the slider currently displays-->
+    <!--$ScaleHeight(height)-->
+    <!--//Scale the slider to new height and keep aspect ratio-->
 
 </body>
 </html>
