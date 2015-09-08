@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('./icomoon.eot?n446ax');
+	src:url('./icomoon.eot?#iefixn446ax') format('embedded-opentype'),
+		url('./icomoon.ttf?n446ax') format('truetype'),
+		url('./icomoon.woff?n446ax') format('woff'),
+		url('./icomoon.svg?n446ax#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bed:before {
+	content: "\e600";
+}
+.icon-bath:before {
+	content: "\e603";
+}
+.icon-apartment:before {
+	content: "\e60b";
+}
+.icon-car:before {
+	content: "\e604";
+}
+.icon-house:before {
+	content: "\e605";
+}
+.icon-land:before {
+	content: "\e607";
+}
+.icon-search:before {
+	content: "\e609";
+}
+.icon-townhouse:before {
+	content: "\e60a";
+}
